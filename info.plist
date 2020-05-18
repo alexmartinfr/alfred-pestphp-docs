@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alexmartinfr.alfred-pestphp-doc</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>5F3B3AF3-9709-4EE5-8742-31952977E46C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3A309868-3B85-42B4-AA2F-26EB0FB9F4BE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alex Martin</string>
+	<key>description</key>
+	<string>An ultra-fast Pest PHP docs search workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Pest PHP Docs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3A309868-3B85-42B4-AA2F-26EB0FB9F4BE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>pest</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching docs for "{query}"...</string>
+				<key>script</key>
+				<string>php pest.php "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search the Pest PHP docs...</string>
+				<key>title</key>
+				<string>Pest Docs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5F3B3AF3-9709-4EE5-8742-31952977E46C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Pest PHP Docs Workflow for Alfred
+
+An ultra-fast Pest PHP docs search workflow for Alfred.
+
+## Installation
+
+1. Download the latest version: https://github.com/AlexMartinFR/alfred-pestphp-docs/releases/download/v0.1.0/pestphp-docs.alfredworkflow
+
+2. Install the workflow by double-clicking the `.alfredworkflow` file
+
+3. Click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
+
+## Usage
+
+Just type `pest` followed by your search query:
+
+```
+pest &lt;query&gt;
+pest test
+```
+
+Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open it in your web browser.
+
+## Credits
+
+This workflow is based on Till Kruss' Laravel Docs workflow:
+https://github.com/tillkruss/alfred-laravel-docs</string>
+	<key>uidata</key>
+	<dict>
+		<key>3A309868-3B85-42B4-AA2F-26EB0FB9F4BE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>545</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+		<key>5F3B3AF3-9709-4EE5-8742-31952977E46C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>235</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/AlexMartinFR/alfred-pestphp-docs</string>
+</dict>
+</plist>
